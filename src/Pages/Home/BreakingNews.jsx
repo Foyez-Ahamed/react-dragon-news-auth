@@ -8,7 +8,7 @@ const BreakingNews = () => {
                 
                 <button className="px-5 py-2 rounded-sm text-white bg-[#D72050] ">Latest</button>
 
-                <Marquee>
+                <Marquee speed={100} pauseOnHover={true}>
                 I can be a React component, multiple React components, or just some text.
                 </Marquee>
 
