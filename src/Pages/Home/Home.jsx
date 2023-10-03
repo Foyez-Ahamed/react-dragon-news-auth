@@ -22,19 +22,19 @@ const Home = () => {
 
                 {/* left side navbar */}
 
-                <div className="border">
+                <div>
                 <LeftSideNavbar></LeftSideNavbar>
                 </div>
 
                 {/* middle news section */}
 
-                <div className=" col-span-2 border">
+                <div className=" col-span-2">
                     <h1>This is news channel</h1>
                 </div>
 
                 {/* right side navbar */}
 
-                <div className="border">
+                <div>
                     <RightSideNavbar></RightSideNavbar>
                 </div>
 
