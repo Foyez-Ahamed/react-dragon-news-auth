@@ -28,7 +28,7 @@ const Navbar = () => {
 
                   <img className="w-[40px]" src={userDefaultPicture} alt="" />
 
-                    <Link to='/'><button className="px-5 py-2 rounded-lg bg-[#403F3F] text-white">Login</button></Link>
+                    <Link to='/'><button className="px-5 py-2 rounded-md bg-[#403F3F] text-white">Login</button></Link>
                 </div>
 
             </section>
