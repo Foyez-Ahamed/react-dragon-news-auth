@@ -34,7 +34,7 @@ const Home = () => {
                 {/* middle news section */}
 
                 <div className=" col-span-2">
-                    <h1 className="text-xl font-bold">Dragon news home</h1>
+                    <h1 className="text-xl font-bold">Dragon News Home</h1>
                     {
                         newses.map(news => <NewsCard key={news._id} news = {news}></NewsCard> )
                     }
