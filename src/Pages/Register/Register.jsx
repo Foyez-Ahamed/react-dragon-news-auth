@@ -1,8 +1,40 @@
 import { Link } from "react-router-dom";
 import Navbar from "../Shared/Navbar/Navbar";
+import { useContext } from "react";
+import { AuthContext } from "../../Provider/AuthProvider";
 
 
 const Register = () => {
+   
+    const {user, userRegister} = useContext(AuthContext);
+
+    console.log(user);
+
+
+    const handleRegister = (e) => {
+        e.preventDefault();
+        
+        const form = new FormData(e.currentTarget);
+        
+        const name = form.get('name');
+        const photoURL = form.get('photoURL');
+        const email = form.get('email');
+        const password = form.get('password');
+
+        // console.log(name, photoURL, email, password);
+
+        userRegister(email, password)
+        .then(result => {
+            console.log(result.user);
+        })
+        .catch(error => {
+            console.log(error.message);
+        })
+    }
+
+
+
+
     return (
         <div>
         <Navbar></Navbar>
@@ -16,7 +48,7 @@ const Register = () => {
         </div>
 
         {/* form start*/}
-        <form>
+        <form onSubmit={handleRegister}>
 
         <div className="relative">
 
